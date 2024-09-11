@@ -1,6 +1,7 @@
 *{
     margin: 0px;
 }
+
 body{font-family: "Roboto", sans-serif;}
 
 .navbar{
@@ -43,8 +44,9 @@ body{font-family: "Roboto", sans-serif;}
     margin-right: 30px;
 }
 
-.menu-list-item-active{
+.menu-list-item.active{
     font-weight: bold;
+
 }
 
 .profile-container{
@@ -53,6 +55,13 @@ body{font-family: "Roboto", sans-serif;}
     align-items: center;
     justify-content: flex-end;
     
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sidebar{
