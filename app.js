@@ -1,9 +1,12 @@
-const arrows = document.querySelectorAll(".arrow")
-const movielists = document.querySelectorAll(".movie-list")
+const arrows = document.querySelectorAll(".arrow");
+const movieLists = document.querySelectorAll(".movie-list");
 
-arrows.forEach((arrow,i)=>{
-    arrow.addEventListener("click",()=>{
-        movielists[i].style.transform = "translateX(-100px)"
-    })
-        console.log(movielists[i].computedStyleMap().get("transform"))
-})
+arrows.forEach((arrow, i) => {
+    arrow.addEventListener("click", () => {
+        movieLists[i].style.transform = `translateX(${
+            movieLists[i].computedStyleMap().get("transform")[0].x.value
+            -270
+        })`;
+    });
+       
+});
