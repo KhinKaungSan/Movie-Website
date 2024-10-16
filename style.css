@@ -91,6 +91,7 @@ body{font-family: "Roboto", sans-serif;}
     right: 1px;
     border-radius: 50%;
     cursor: pointer;
+    transition: 1s ease all;
 }
 
 .sidebar{
@@ -269,4 +270,11 @@ body{font-family: "Roboto", sans-serif;}
 .toggle-ball.active{
     background-color: white;
     transform: translateX(-20px);
+}
+
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+
 }
